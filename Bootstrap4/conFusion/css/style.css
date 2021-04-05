@@ -1,3 +1,7 @@
+body{
+    padding-top: 50px ;
+    z-index: 0 .;
+}
 .row-header{
     margin: 0 auto;
     padding: 0px;
@@ -23,4 +27,8 @@ address{
     font-size:80%;
     margin:0px;
     color:#0f0f0f;
+}
+.navbar-dark{
+    background: #512DA8;
+ 
 }
