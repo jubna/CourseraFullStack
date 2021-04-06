@@ -1,6 +1,6 @@
 body{
     padding-top: 50px ;
-    z-index: 0 .;
+    z-index: 0 ;
 }
 .row-header{
     margin: 0 auto;
@@ -12,7 +12,7 @@ body{
     border: 1px ridge;
     min-height: 400px;
 }
-footer{
+.footer{
     margin: 0 auto;
     background-color: #D1C4E9;;
     padding: 20px 0;
