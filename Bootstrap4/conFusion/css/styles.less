@@ -1,0 +1,70 @@
+//varaible declaration
+@lt-gray:$ddd;
+@background-dark:#512DA8;
+@background-light:#9575CD ;
+@background-pale:#D1C4E9;
+
+@carousel-item-height:300px;
+//add a mixin
+.zero-margin(@pd-up-dn:0px,@pd-lf-rg:0px){
+    margin: 0px auto;
+    padding: @pd-lf-rg,@pd-up-dn;
+}
+body{
+    padding-top: 50px ;
+    z-index: 0 ;
+}
+.row-header{
+    .zero-margin();
+}
+.row-content{
+    .zero-margin(50px,0px);
+    border: 1px ridge;
+    min-height: 400px;
+}
+.footer{
+    .zero-margin(20px,0px);
+    background-color: @background-pale;
+}
+.jumbotron{
+    .zero-margin(70px,30px);
+    background-color:  @background-light;
+    color:floralwhite;
+ }
+ address{
+    font-size:80%;
+    margin:0px;
+    color:#0f0f0f;
+}
+.navbar-dark{
+    background:@background-dark;
+ 
+}
+.tab-content{
+    border-left: 1 px solid #ddd;
+    border-right: 1 px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+
+}
+.carousel {
+    background:@background-dark;
+
+.carousel-item {
+    height: @carousel-item-height;
+  
+   img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+}
+}
+}
+
+#carouselButton {
+    right:0px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+}
