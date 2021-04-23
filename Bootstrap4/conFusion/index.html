@@ -36,8 +36,8 @@
                 </a>
             </span> -->
             <span class="navbar-text">
-                <a data-toggle="modal" data-target="#loginModal">
-                <span class="fa fa-sign-in"></span> Login</a>
+                <a id="loginLink">
+                    <span class="fa fa-sign-in"></span> Login</a>
             </span>
             </div>
         </div>
@@ -176,7 +176,7 @@
                     <img src="img/logo.png" class="image-fluid">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                    <a role="button" class="btn btn-warning btn-sm btn-block" data-toggle="modal" href="#reserve_table" style="font-weight:500;">Reserve Table</a>
+                    <a role="button" class="btn btn-warning btn-sm btn-block"  id="resBut" style="font-weight:500;">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -337,17 +337,8 @@
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-<!-- <script>
-    $(document).ready(function(){
-        $("#mycarousel").carousel( { interval: 2000 } );
-        $("#carousel-pause").click(function(){
-            $("#mycarousel").carousel('pause');
-        });
-        $("#carousel-play").click(function(){
-            $("#mycarousel").carousel('cycle');
-        });
-    });
-</script> -->
+ 
+
 <script>
    $(document).ready(function(){
     $("#mycarousel").carousel( { interval: 2000 } );  
@@ -363,6 +354,22 @@
                     $("#carouselButton").children("span").addClass('fa-pause');                    
                 }
             });
+            $('#loginLink').click(function(){
+                 $("#loginModal").modal('show');
+                    });
+            $('#resBut').click(function(){
+                 $("#reserve_table").modal('show');
+                    });
+
+            /* $('a').click(function(){
+        $('#loginModal').modal('show');
+        $('#reserve_table').modal('hide');
+});
+
+        $('button').click(function(){
+        $('#reserve_table').modal('show');
+        $('#loginModal').modal('hide');
+}); */
 });
 </script>
 </body>
